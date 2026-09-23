@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "eco2:shop",
+    "eco2:sell_block",
+    "eco2:player_shop"
+  ]
+}

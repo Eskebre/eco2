@@ -1,0 +1,1586 @@
+{
+  "mod_elements": [
+    {
+      "name": "Currency1",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_1",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/item/Currency1Item.java",
+          "src/main/resources/assets/eco2/items/currency_1.json",
+          "src/main/resources/assets/eco2/models/item/currency_1.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency4",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eco2/items/currency_4.json",
+          "src/main/resources/assets/eco2/models/item/currency_4.json",
+          "src/main/java/com/eskebre/economy_squared/item/Currency4Item.java"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency16",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_16",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eco2/items/currency_16.json",
+          "src/main/java/com/eskebre/economy_squared/item/Currency16Item.java",
+          "src/main/resources/assets/eco2/models/item/currency_16.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency64",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_64",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eco2/items/currency_64.json",
+          "src/main/java/com/eskebre/economy_squared/item/Currency64Item.java",
+          "src/main/resources/assets/eco2/models/item/currency_64.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "ATM",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/eco2/models/item/atm.json",
+          "src/main/resources/assets/eco2/blockstates/atm.json",
+          "src/main/resources/data/eco2/loot_table/blocks/atm.json",
+          "src/main/java/com/eskebre/economy_squared/block/ATMBlock.java",
+          "src/main/resources/assets/eco2/items/atm.json",
+          "src/main/resources/assets/eco2/models/block/atm.json"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "ATMGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atmgui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/world/inventory/ATMGUIMenu.java",
+          "src/main/java/com/eskebre/economy_squared/client/gui/ATMGUIScreen.java",
+          "src/main/java/com/eskebre/economy_squared/network/ATMGUIButtonMessage.java",
+          "src/main/java/com/eskebre/economy_squared/network/ATMGUISlotMessage.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "ATMOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ATMOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "CurrencyReturnString",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_return_string",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/CurrencyReturnStringProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "ATMSlotChanges",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_slot_changes",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ATMSlotChangesProcedure.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "ATMWithdraw1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_withdraw_1",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ATMWithdraw1Procedure.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "ATMWithdraw4",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_withdraw_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ATMWithdraw4Procedure.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "ATMWithdraw16",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_withdraw_16",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ATMWithdraw16Procedure.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "ATMWithdraw64",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_withdraw_64",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ATMWithdraw64Procedure.java"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "Currency1To4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_1_to_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/advancement/recipes/currency_1_to_4.json",
+          "src/main/resources/data/eco2/recipe/currency_1_to_4.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency4To16",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_4_to_16",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/advancement/recipes/currency_4_to_16.json",
+          "src/main/resources/data/eco2/recipe/currency_4_to_16.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency16To64",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_16_to_64",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/recipe/currency_16_to_64.json",
+          "src/main/resources/data/eco2/advancement/recipes/currency_16_to_64.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency64To16",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_64_to_16",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/advancement/recipes/currency_64_to_16.json",
+          "src/main/resources/data/eco2/recipe/currency_64_to_16.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency16To4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_16_to_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/advancement/recipes/currency_16_to_4.json",
+          "src/main/resources/data/eco2/recipe/currency_16_to_4.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "Currency4To1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "currency_4_to_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/advancement/recipes/currency_4_to_1.json",
+          "src/main/resources/data/eco2/recipe/currency_4_to_1.json"
+        ]
+      },
+      "path": "~/Currency"
+    },
+    {
+      "name": "ShopGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/world/inventory/ShopGUIMenu.java",
+          "src/main/java/com/eskebre/economy_squared/client/gui/ShopGUIScreen.java",
+          "src/main/java/com/eskebre/economy_squared/network/ShopGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "Shop",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/loot_table/blocks/shop.json",
+          "src/main/resources/assets/eco2/models/item/shop.json",
+          "src/main/java/com/eskebre/economy_squared/block/ShopBlock.java",
+          "src/main/resources/assets/eco2/models/block/shop.json",
+          "src/main/java/com/eskebre/economy_squared/block/entity/ShopBlockEntity.java",
+          "src/main/resources/assets/eco2/blockstates/shop.json",
+          "src/main/resources/assets/eco2/items/shop.json"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ShopOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopConfigurator",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_configurator",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/item/ShopConfiguratorItem.java",
+          "src/main/resources/assets/eco2/models/item/shop_configurator.json",
+          "src/main/resources/assets/eco2/items/shop_configurator.json"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopConfigureGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_configure_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/client/gui/ShopConfigureGUIScreen.java",
+          "src/main/java/com/eskebre/economy_squared/world/inventory/ShopConfigureGUIMenu.java",
+          "src/main/java/com/eskebre/economy_squared/network/ShopConfigureGUIButtonMessage.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopConfigureGUIThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_configure_gui_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ShopConfigureGUIThisGUIIsOpenedProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopConfigureGuiApply",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_configure_gui_apply",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ShopConfigureGuiApplyProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopGUIGetPrice",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_gui_get_price",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ShopGUIGetPriceProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopInventorySlotAutomationPlaceCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_inventory_slot_automation_place_condition",
+      "metadata": {
+        "dependencies": [],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ShopInventorySlotAutomationPlaceConditionProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ShopGUIBuy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "shop_gui_buy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ShopGUIBuyProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "Eco2Tab",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "eco_2_tab",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "SellBlockGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_block_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/network/SellBlockGUIButtonMessage.java",
+          "src/main/java/com/eskebre/economy_squared/client/gui/SellBlockGUIScreen.java",
+          "src/main/java/com/eskebre/economy_squared/world/inventory/SellBlockGUIMenu.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "SellBlockOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_block_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/SellBlockOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "SellBlockGUISell",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_block_gui_sell",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/SellBlockGUISellProcedure.java"
+        ],
+        "return_type": "actionresulttype"
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "SellBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sell_block",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/block/entity/SellBlockBlockEntity.java",
+          "src/main/resources/assets/eco2/items/sell_block.json",
+          "src/main/java/com/eskebre/economy_squared/block/SellBlockBlock.java",
+          "src/main/resources/data/eco2/loot_table/blocks/sell_block.json",
+          "src/main/resources/assets/eco2/blockstates/sell_block.json",
+          "src/main/resources/assets/eco2/models/block/sell_block.json",
+          "src/main/resources/assets/eco2/models/item/sell_block.json"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "PlayerShop",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "player_shop",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/block/PlayerShopBlock.java",
+          "src/main/resources/assets/eco2/models/item/player_shop.json",
+          "src/main/resources/assets/eco2/items/player_shop.json",
+          "src/main/resources/data/eco2/loot_table/blocks/player_shop.json",
+          "src/main/java/com/eskebre/economy_squared/block/entity/PlayerShopBlockEntity.java",
+          "src/main/resources/assets/eco2/blockstates/player_shop.json",
+          "src/main/resources/assets/eco2/models/block/player_shop.json"
+        ]
+      }
+    },
+    {
+      "name": "CMDGetPlayerBalance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_get_player_balance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "arguments",
+            "type": "cmdcontext"
+          },
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/CMDGetPlayerBalanceProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "Balance",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "balance",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/command/BalanceCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "CMDFixBalance",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cmd_fix_balance",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/CMDFixBalanceProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "FixBalance",
+      "type": "command",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fix_balance",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/command/FixBalanceCommand.java"
+        ]
+      }
+    },
+    {
+      "name": "STRGetTotalSold",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_get_total_sold",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/STRGetTotalSoldProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "STRGetInStock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_get_in_stock",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/STRGetInStockProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "DisplayStock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "display_stock",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "logic",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/DisplayStockProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "ResetTotal",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "reset_total",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/ResetTotalProcedure.java"
+        ]
+      },
+      "path": "~/Admin Shops"
+    },
+    {
+      "name": "Wallet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallet",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/item/WalletItem.java",
+          "src/main/resources/assets/eco2/items/wallet.json",
+          "src/main/resources/assets/eco2/models/item/wallet.json"
+        ]
+      },
+      "path": "~/Wallet"
+    },
+    {
+      "name": "WalletRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallet_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/WalletRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Wallet"
+    },
+    {
+      "name": "WalletRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wallet_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/recipe/wallet_recipe.json",
+          "src/main/resources/data/eco2/advancement/recipes/wallet_recipe.json"
+        ]
+      },
+      "path": "~/Wallet"
+    },
+    {
+      "name": "ATMRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "atm_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/advancement/recipes/atm_recipe.json",
+          "src/main/resources/data/eco2/recipe/atm_recipe.json"
+        ]
+      },
+      "path": "~/ATM"
+    },
+    {
+      "name": "OnLoad",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_load",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/OnLoadProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "OnPlayerTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "on_player_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/OnPlayerTickProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TicketBlockEmittedRedstonePower",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_emitted_redstone_power",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          }
+        ],
+        "return_type": "number",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockEmittedRedstonePowerProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "SetOwner",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "set_owner",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/SetOwnerProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TicketBlock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/eco2/loot_table/blocks/ticket_block.json",
+          "src/main/java/com/eskebre/economy_squared/block/entity/TicketBlockBlockEntity.java",
+          "src/main/resources/assets/eco2/models/item/ticket_block.json",
+          "src/main/resources/assets/eco2/blockstates/ticket_block.json",
+          "src/main/resources/assets/eco2/models/block/ticket_block.json",
+          "src/main/resources/assets/eco2/items/ticket_block.json",
+          "src/main/java/com/eskebre/economy_squared/block/TicketBlockBlock.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockBlockDestroyedByPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_block_destroyed_by_player",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockBlockDestroyedByPlayerProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/world/inventory/TicketBlockGuiMenu.java",
+          "src/main/java/com/eskebre/economy_squared/client/gui/TicketBlockGuiScreen.java",
+          "src/main/java/com/eskebre/economy_squared/network/TicketBlockGuiButtonMessage.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockConfigureGui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_configure_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/client/gui/TicketBlockConfigureGuiScreen.java",
+          "src/main/java/com/eskebre/economy_squared/network/TicketBlockConfigureGuiButtonMessage.java",
+          "src/main/java/com/eskebre/economy_squared/world/inventory/TicketBlockConfigureGuiMenu.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockOnBlockRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_on_block_rightclicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockOnBlockRightclickedProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockPowered",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_powered",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockPoweredProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockConfigureGuiThisGUIIsClosed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_configure_gui_this_gui_is_closed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockConfigureGuiThisGUIIsClosedProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockBreakBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_break_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockBreakBlockProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockBuy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_buy",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "actionresulttype",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockBuyProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "StrGetMoney",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "str_get_money",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "return_type": "string",
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/StrGetMoneyProcedure.java"
+        ]
+      }
+    },
+    {
+      "name": "TicketBlockConfigureGuiThisGUIIsOpened",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_configure_gui_this_gui_is_opened",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockConfigureGuiThisGUIIsOpenedProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    },
+    {
+      "name": "TicketBlockClaimMoney",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ticket_block_claim_money",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/com/eskebre/economy_squared/procedures/TicketBlockClaimMoneyProcedure.java"
+        ]
+      },
+      "path": "~/Ticket Block"
+    }
+  ],
+  "variable_elements": [
+    {
+      "name": "currency",
+      "type": "number",
+      "scope": "player_persistent",
+      "value": "0"
+    }
+  ],
+  "sound_elements": [],
+  "tag_elements": {
+    "ITEMS:mod:currency": [
+      "CUSTOM:Currency1",
+      "CUSTOM:Currency4",
+      "CUSTOM:Currency16",
+      "CUSTOM:Currency64"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~ATM@CUSTOM:ATM"
+    ],
+    "BLOCKS:minecraft:wither_immune": [
+      "CUSTOM:Shop",
+      "CUSTOM:SellBlock",
+      "CUSTOM:PlayerShop"
+    ],
+    "BLOCKS:minecraft:dragon_immune": [
+      "CUSTOM:Shop",
+      "CUSTOM:SellBlock",
+      "CUSTOM:PlayerShop"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.eco2.currency_1": "$1",
+      "item.eco2.currency_4": "$4",
+      "item.eco2.currency_16": "$16",
+      "item.eco2.currency_64": "$64",
+      "item.eco2.atm": "ATM",
+      "gui.eco2.atmgui.button_1x": "1x",
+      "gui.eco2.atmgui.amount_prefix": "",
+      "gui.eco2.atmgui.button_16x": "16x",
+      "gui.eco2.atmgui.label_atm": "ATM",
+      "gui.eco2.atmgui.amount_suffix": "",
+      "gui.eco2.atmgui.label_currency": "Currency",
+      "gui.eco2.atmgui.button_64x": "64x",
+      "gui.eco2.atmgui.label_amount": "Amount:",
+      "gui.eco2.atmgui.button_4x": "4x",
+      "gui.eco2.atmgui.label_deposit": "Deposit",
+      "gui.eco2.atmgui.label_withdraw": "Withdraw",
+      "gui.eco2.shop_gui.label_itemprice": "ItemPrice",
+      "gui.eco2.shop_gui.label_cost": "Price:",
+      "item.eco2.shop": "Shop",
+      "item.eco2.shop_configurator": "Shop Configurator",
+      "gui.eco2.shop_configure_gui.label_output_item": "Output Item:",
+      "gui.eco2.shop_configure_gui.cost": "",
+      "gui.eco2.shop_configure_gui.label_cost": "Cost:",
+      "gui.eco2.shop_gui.button_buy": "Buy",
+      "gui.eco2.shop_gui.label_amount": "Amount:",
+      "gui.eco2.shop_configure_gui.button_apply": "Apply",
+      "item_group.eco2.eco_2_tab": "Eco 2 Tab",
+      "gui.eco2.sell_block_gui.label_price": "Price:",
+      "gui.eco2.sell_block_gui.label_amount": "Amount:",
+      "gui.eco2.sell_block_gui.button_sell": "Sell",
+      "item.eco2.sell_block": "Sell Block",
+      "item.eco2.player_shop": "Player Shop",
+      "gui.eco2.shop_configure_gui.match_nbt": "Match NBT",
+      "gui.eco2.shop_configure_gui.nbtMatch": "Match NBT",
+      "gui.eco2.shop_configure_gui.label_total_sold": "Total Sold:",
+      "gui.eco2.shop_configure_gui.label_max_sold": "Max Sold:",
+      "gui.eco2.shop_configure_gui.max_sold": "",
+      "gui.eco2.shop_gui.label_stock_left": "Stock Left:",
+      "gui.eco2.sell_block_gui.label_stock_left": "Stock Left:",
+      "gui.eco2.shop_configure_gui.button_reset_total": "Reset Total",
+      "item.eco2.wallet": "Wallet",
+      "item.eco2.ticket_block": "Ticket Block",
+      "gui.eco2.ticket_block_gui.label_cost": "Cost:",
+      "gui.eco2.ticket_block_gui.label_amount": "amount",
+      "gui.eco2.ticket_block_gui.button_buy": "Buy",
+      "gui.eco2.ticket_block_gui.label_ticket_block": "Ticket Block",
+      "gui.eco2.ticket_block_configure_gui.label_ticket_block_configure": "Ticket Block Configure",
+      "gui.eco2.ticket_block_configure_gui.label_amount": "Amount",
+      "gui.eco2.ticket_block_configure_gui.label_money": "Money:",
+      "gui.eco2.ticket_block_configure_gui.button_claim": "Claim",
+      "gui.eco2.ticket_block_configure_gui.button_test": "Test",
+      "gui.eco2.ticket_block_configure_gui.cost": "0",
+      "gui.eco2.ticket_block_configure_gui.label_cost": "Cost:",
+      "gui.eco2.ticket_block_configure_gui.button_pickup_block": "Pickup Block",
+      "gui.eco2.ticket_block_gui.label_amount1": "Amount:"
+    }
+  },
+  "metadata": {
+    "files": [
+      "src/main/java/com/eskebre/economy_squared/init/Eco2ModScreens.java",
+      "src/main/java/com/eskebre/economy_squared/network/MenuStateUpdateMessage.java",
+      "src/main/java/com/eskebre/economy_squared/init/Eco2ModMenus.java",
+      "src/main/java/com/eskebre/economy_squared/init/Eco2ModBlocks.java",
+      "src/main/java/com/eskebre/economy_squared/init/Eco2ModBlockEntities.java",
+      "src/main/java/com/eskebre/economy_squared/init/Eco2ModItems.java",
+      "src/main/java/com/eskebre/economy_squared/Eco2Mod.java",
+      "src/main/resources/pack.mcmeta",
+      "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/com/eskebre/economy_squared/init/Eco2ModTabs.java",
+      "src/main/java/com/eskebre/economy_squared/network/Eco2ModVariables.java"
+    ]
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "ATM",
+        "children": []
+      },
+      {
+        "name": "Currency",
+        "children": []
+      },
+      {
+        "name": "Admin Shops",
+        "children": []
+      },
+      {
+        "name": "Ticket Block",
+        "children": []
+      },
+      {
+        "name": "Wallet",
+        "children": []
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "eco2",
+    "modName": "Economy Squared",
+    "version": "9.2.0",
+    "author": "Eskebre",
+    "websiteURL": "https://www.eskebre.com",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "neoforge-26.1.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "com.eskebre.economy_squared"
+  },
+  "mcreatorVersion": 202600233518
+}

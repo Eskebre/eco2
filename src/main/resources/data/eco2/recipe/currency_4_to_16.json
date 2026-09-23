@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "currency",
+  "category": "misc",
+  "ingredients": [
+    "eco2:currency_4",
+    "eco2:currency_4",
+    "eco2:currency_4",
+    "eco2:currency_4"
+  ],
+  "result": {
+    "id": "eco2:currency_16",
+    "count": 1
+  }
+}

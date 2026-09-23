@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "eco2:currency_16",
+    "eco2:currency_64",
+    "eco2:currency_1",
+    "eco2:currency_4"
+  ]
+}

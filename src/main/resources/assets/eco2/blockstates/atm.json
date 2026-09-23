@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "eco2:block/atm"
+    },
+    "facing=east": {
+      "model": "eco2:block/atm",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "eco2:block/atm",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "eco2:block/atm",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Items.IRON_INGOT",
+      "TAG:mod:currency"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "",
+      "Blocks.GLASS_PANE",
+      "Items.IRON_INGOT",
+      "Items.IRON_INGOT",
+      "Blocks.STONE_BUTTON"
+    ],
+    "recipeReturnStack": "CUSTOM:ATM",
+    "name": "atm_recipe",
+    "namespace": "mod"
+  }
+}

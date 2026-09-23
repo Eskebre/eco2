@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aaa",
+    "a b",
+    "aac"
+  ],
+  "key": {
+    "a": "minecraft:iron_ingot",
+    "b": "minecraft:glass_pane",
+    "c": "minecraft:stone_button"
+  },
+  "result": {
+    "id": "eco2:atm",
+    "count": 1
+  }
+}

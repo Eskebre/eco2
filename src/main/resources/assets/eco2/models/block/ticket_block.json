@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "eco2:block/machine_texture",
+    "up": "eco2:block/machine_texture",
+    "north": "eco2:block/ticketblock",
+    "east": "eco2:block/machine_texture",
+    "south": "eco2:block/machine_texture",
+    "west": "eco2:block/machine_texture",
+    "particle": "eco2:block/machine_texture"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "eco2:block/atm_top_bottom",
+    "up": "eco2:block/atm_top_bottom",
+    "north": "eco2:block/atm_front",
+    "east": "eco2:block/atm_sides",
+    "south": "eco2:block/atm_sides",
+    "west": "eco2:block/atm_sides",
+    "particle": "eco2:block/atm_top_bottom"
+  }
+}

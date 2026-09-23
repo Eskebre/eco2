@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "eco2:block/player_shop"
+    }
+  }
+}

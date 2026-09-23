@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "Items.IRON_INGOT",
+      "TAG:mod:currency"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "",
+      "",
+      "",
+      "Items.LEATHER",
+      "Items.IRON_INGOT",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER",
+      "Items.LEATHER"
+    ],
+    "recipeReturnStack": "CUSTOM:Wallet",
+    "name": "wallet_recipe",
+    "namespace": "mod"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "aba",
+    "aaa"
+  ],
+  "key": {
+    "a": "minecraft:leather",
+    "b": "minecraft:iron_ingot"
+  },
+  "result": {
+    "id": "eco2:wallet",
+    "count": 1
+  }
+}
